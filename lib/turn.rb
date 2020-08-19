@@ -35,8 +35,8 @@ def move(board, position, token)
   board[position] = token
 end
 
-def turn(user_input)
+def turn(board)
 puts "Please enter 1-9:"
-gets.strip
-
+input = gets.strip
+input_to_index(input)
 end
