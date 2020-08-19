@@ -31,14 +31,15 @@ puts valid_move?(whateveryouwanttoput_board, 6)
 puts valid_move?(whateveryouwanttoput_board, 7)
 puts valid_move?(whateveryouwanttoput_board, 8)
 
-def move(board, position, token)
+def move(board, position, token="X")
   board[position] = token
 end
 
 def turn(board)
-puts "Please enter 1-9:"
-input = gets.strip
-index = input_to_index(input)
-if valid_move?(board, index)
+ puts "Please enter 1-9:"
+  input = gets.strip
+  index = input_to_index(input)
+ if valid_move?(board, index)
+move(board, position)
 end
 end
