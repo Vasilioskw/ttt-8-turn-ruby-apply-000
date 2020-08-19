@@ -38,8 +38,5 @@ end
 def turn(user_input)
 puts "Please enter 1-9:"
 gets.strip
-end
 
-gets.strip = position
-input_to_index(position)
 end
